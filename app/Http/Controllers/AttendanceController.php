@@ -13,7 +13,7 @@ class AttendanceController extends Controller
     public function index(Request $request): View
     {
         $date = $request->input('date', now()->toDateString());
-        $attendances = HrAttendance::where('date', $date)->with('employee')->get();
+        $attendances = HrAttendance::whereDate('date', $date)->with('employee')->get();
         $employees = HrEmployee::where('status', 'active')->orderBy('first_name')->get();
 
         return view('attendance.index', compact('attendances', 'employees', 'date'));

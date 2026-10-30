@@ -18,6 +18,17 @@ The **HR Management System** covers key organizational human capital workflows:
 
 ---
 
+## Screenshots
+
+| Tampilan | Preview |
+|---|---|
+| **Dashboard Operasional HR**<br>Ringkasan metrik headcount aktif, presensi hari ini, permohonan cuti tertunda, estimasi beban payroll, dan distribusi departemen | ![Dashboard Operasional HR](docs/screenshots/01-hr-dashboard-overview.png) |
+| **Direktori Karyawan & Onboarding**<br>Manajemen data staf dengan kode unik pegawai, penugasan posisi/departemen, pencatatan gaji, dan fitur ekspor CSV | ![Direktori Karyawan](docs/screenshots/02-employee-directory.png) |
+| **Alur Pengajuan & Persetujuan Cuti**<br>Formulir permohonan cuti (tahunan/sakit/melahirkan), validasi sisa kuota, dan persetujuan manajerial | ![Persetujuan Cuti](docs/screenshots/03-leave-approval-workflow.png) |
+| **Administrasi Penggajian (Payroll)**<br>Pemrosesan slip gaji bulanan karyawan, kalkulasi tunjangan & potongan, serta pencatatan status pelunasan (Paid/Draft) | ![Administrasi Payroll](docs/screenshots/04-payroll-management.png) |
+
+---
+
 ## 2. Technology Stack
 
 - **Backend**: Laravel 11/13, Eloquent ORM, Database Transactions

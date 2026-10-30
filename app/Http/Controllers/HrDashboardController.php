@@ -25,7 +25,7 @@ class HrDashboardController extends Controller
         }
 
         $activeEmployees = HrEmployee::where('status', 'active')->count();
-        $todayAttendances = HrAttendance::where('date', now()->toDateString())->count();
+        $todayAttendances = HrAttendance::whereDate('date', now()->toDateString())->count();
         $pendingLeaves = HrLeaveRequest::where('status', 'pending')->with('employee')->latest()->get();
         $totalMonthlyPayroll = (int) HrEmployee::where('status', 'active')->sum('salary_cents');
 
